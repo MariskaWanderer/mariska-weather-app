@@ -1,10 +1,14 @@
-import "./style.css";
+function displayTemperature(response) {
+  console.log(response.data);
+  let temperatureElement = document.querySelector("#temperature");
+  let cityElement = document.querySelector("#city");
+  let humidityElement = document.querySelector("#humidity");
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  cityElement.innerHTML = response.data.name;
+  humidityElement.innerHTML = response.data.main.humidity;
+}
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+let apiKey = "99b8f9330a1bfba3a85e523fd3c2e528";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
+
+axios.get(apiUrl).then(displayTemperature);
