@@ -111,3 +111,7 @@ h1 {
 .friday {
   padding: 5px 0px;
 }
+.weather-app {
+  max-width: 1000px;
+  margin: 0 auto;
+}
