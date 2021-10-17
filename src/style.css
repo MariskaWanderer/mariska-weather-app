@@ -78,12 +78,14 @@ h1 {
 .time {
   padding: 10px;
 }
-.degreesSymbol {
-  font-size: 25px;
-}
-.degrees {
+.weather-temprature {
   font-size: 100px;
   font-weight: medium;
+}
+.weather-temprature .units {
+  position: relative;
+  font-size: 15px;
+  top: -50px;
 }
 .forecast {
   padding: 10px;
