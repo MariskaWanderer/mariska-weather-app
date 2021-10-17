@@ -1,0 +1,113 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h3 {
+  color: #100e3b;
+}
+
+h2 {
+  color: #ffffff;
+  padding: 0px 10px;
+}
+
+h1 {
+  text-align: left;
+  font-weight: 400;
+  margin: 0;
+  font-size: 36px;
+  line-height: 48px;
+  padding: 15px 0px 0px 0px;
+}
+
+.search {
+  align-content: left;
+}
+.addCitySection {
+  align-content: center;
+  padding: 15px 0px;
+}
+.cityImg {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+.cityImageName {
+  text-align: center;
+  font-size: 12px;
+}
+.currentCityName {
+  padding: 0px 0px 15px 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.rightPage {
+  border-radius: 10px;
+  border: 1px solid;
+  background-color: #231d3c;
+  padding: 140px 20px;
+  margin: 20px 0px;
+  text-align: center;
+  font-family: Montserrat;
+  color: #ffffff;
+}
+.leftPage {
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: lightgrey;
+  padding: 20px 20px;
+  margin: 20px 0px;
+}
+.addCityButton {
+  color: #000000;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: lightgrey;
+  background-color: #ffffff;
+  padding: 40px;
+  font-size: 12px;
+}
+.today-icon {
+  color: #ffffff;
+  padding: 15px 10px;
+}
+.date {
+  padding: 10px;
+}
+.time {
+  padding: 10px;
+}
+.degreesSymbol {
+  font-size: 25px;
+}
+.degrees {
+  font-size: 100px;
+  font-weight: medium;
+}
+.forecast {
+  padding: 10px;
+}
+.humidityBig {
+  padding: 10px;
+}
+.currentCityNameBig {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.monday {
+  padding: 5px 0px;
+}
+.tuesday {
+  padding: 5px 0px;
+}
+.wednesday {
+  padding: 5px 0px;
+}
+.thursday {
+  padding: 5px 0px;
+}
+.friday {
+  padding: 5px 0px;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/a8f6ab7aaf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="src/style.css" />
+
+    <title>Weather App</title>
+    
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="row">
+  <div class="col-8">
+			<div class="leftPage">
+    <form>
+      <div class="search">
+      <div class="row">
+        <div class="col">
+  <div class="form-group">
+    <input type="text" class="form-control" id="enterYourCity" aria-describedby="emailHelp" placeholder="enter your city">
+  </div>
+  </div>
+  <div class="col">
+  <button type="submit" class="btn btn-primary">Submit</button>	
+</div>
+  </div>
+  </div>
+
+</form>
+<h1>Weather <strong>Forecast</strong></h1>
+
+<div class="addCitySection">
+<div class="row">
+<div class="col">
+  <img src="src/images/Amsterdam-Netherlands.png" alt="Amsterdam-Netherlands" class="cityImg">
+  <div class="cityImageName">Amsterdam, Netherlands</div>
+  </div>
+  <div class="col">
+  <img src="src/images/Venice-Italy.png" alt="Venice-Italy" class="cityImg">
+  <div class="cityImageName">Venice, Italy</div>
+  </div>
+  <div class="col">
+  <img src="src/images/Athens-Greece.png" alt="Athens-Greece" class="cityImg">
+  <div class="cityImageName">Athens, Greece</div>
+  </div>
+  <div class="col">
+  <button class="addCityButton">
+		<i class="fas fa-plus"></i> <br> add city</button>
+  </div>
+  </div>
+</div>
+
+<div class="currentCityName">Amsterdam</div>
+
+  <div class="monday">
+<div class="row"> 
+<div class="col">
+  <i class="fas fa-wind"></i>
+  </div>
+  <div class="col">
+  <div class="weekday">monday</div>
+  </div>
+  <div class="col">
+  <div class="temprature">30°C</div>
+  </div>
+  <div class="col">
+  <div class="humidity">
+		<span> <i class="fas fa-tint"></i></span>
+		<span> 30%</span></div>
+  </div>
+  </div>
+  </div>
+
+  <div class="tuesday">
+  <div class="row"> 
+<div class="col">
+  <i class="fas fa-sun"></i></i>
+  </div>
+  <div class="col">
+  <div class="weekday">tuesday</div>
+  </div>
+  <div class="col">
+  <div class="temprature">30°C</div>
+  </div>
+  <div class="col">
+  <div class="humidity">
+		<span> <i class="fas fa-tint"></i></span>
+		<span> 30%</span></div>
+  </div>
+  </div>
+  </div>
+
+    <div class="wednesday">
+<div class="row"> 
+<div class="col">
+  <i class="fas fa-cloud-showers-heavy"></i></i>
+  </div>
+  <div class="col">
+  <div class="weekday">wednesday</div>
+  </div>
+  <div class="col">
+  <div class="temprature">30°C</div>
+  </div>
+  <div class="col">
+  <div class="humidity">
+		<span> <i class="fas fa-tint"></i></span>
+		<span> 30%</span></div>
+  </div>
+  </div>
+  </div>
+
+  <div class="thursday">
+  <div class="row"> 
+<div class="col">
+  <i class="fas fa-cloud-sun"></i></i>
+  </div>
+  <div class="col">
+  <div class="weekday">thursday</div>
+  </div>
+  <div class="col">
+  <div class="temprature">30°C</div>
+  </div>
+  <div class="col">
+  <div class="humidity">
+	<span><i class="fas fa-tint"></i></span>
+		<span>30%</span></div>
+  </div>
+  </div>
+  </div>
+
+    <div class="friday">
+  <div class="row"> 
+<div class="col">
+  <i class="fas fa-cloud-sun-rain"></i></i>
+  </div>
+  <div class="col">
+  <div class="weekday">friday</div>
+  </div>
+  <div class="col">
+  <div class="temprature">30°C</div>
+  </div>
+  <div class="col">
+  <div class="humidity">
+		<span> <i class="fas fa-tint"></i></span>
+		<span> 30%</span></div>
+  </div>
+  </div>
+	</div>
+</div>
+
+	</div>
+  <div class="col-4">
+			<div class="rightPage">
+    <h2><i class="fas fa-cloud-sun today-icon"></i>today</h2>
+    <span class="date">22 August</span>
+    <span class="time">12:30</span>
+    <div class="degrees">
+			<span>30</span>
+			<span class="degreesSymbol">°C</span>
+		</div>
+    <span class="forecast">clear</span>
+    <span class="humidityBig">humidity 30%</span>
+    <div class="currentCityNameBig">Amsterdam</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<script src="src/app.js"></script>
+  </body>
+</html>
