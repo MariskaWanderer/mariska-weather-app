@@ -35,8 +35,11 @@
       <div class="search">
       <div class="row">
         <div class="col">
-  <div class="form-group">
-    <input type="text" class="form-control" id="enterYourCity" aria-describedby="emailHelp" placeholder="enter your city">
+  <div class="form-group" id="search-form">
+    <input type="search"
+    class="form-control"
+    id="city-input"
+    placeholder="enter your city">
   </div>
   </div>
   <div class="col">
@@ -171,7 +174,7 @@
   <div class="col-4">
 			<div class="rightPage">
     <h2><i class="fas fa-cloud-sun today-icon"></i>today</h2>
-    <span id="date"></span>
+    <span id="date" class="mb-5"></span>
     <div class="weather-temperature">
 			<strong id="temperature"></strong>
 			<span class="units">

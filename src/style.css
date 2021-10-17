@@ -37,11 +37,6 @@ h1 {
   text-align: center;
   font-size: 12px;
 }
-.currentCityNameBig {
-  padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
-}
 .currentCityName {
   padding: 0px 0px 15px 0px;
   font-size: 20px;
@@ -86,6 +81,7 @@ h1 {
 .temperature {
   font-size: 100px;
   font-weight: medium;
+  color: #ffffff;
 }
 .weather-temprature {
   font-size: 100px;
@@ -101,6 +97,11 @@ h1 {
 }
 .humidityBig {
   padding: 10px;
+}
+.currentCityNameBig {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 .monday {
   padding: 5px 0px;
