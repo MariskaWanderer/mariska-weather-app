@@ -21,6 +21,10 @@ h1 {
   padding: 15px 0px 0px 0px;
 }
 
+li {
+  list-style-type: none;
+}
+
 .search {
   align-content: left;
 }
@@ -98,10 +102,17 @@ h1 {
 .humidityBig {
   padding: 10px;
 }
+.city {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
 .currentCityNameBig {
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
+  color: #ffffff;
 }
 .monday {
   padding: 5px 0px;

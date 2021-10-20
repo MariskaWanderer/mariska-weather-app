@@ -17,7 +17,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 <link rel="stylesheet" href="src/style.css" />
 
@@ -31,24 +31,21 @@
       <div class="row">
   <div class="col-8">
 			<div class="leftPage">
-    <form>
-      <div class="search">
-      <div class="row">
-        <div class="col">
-  <div class="form-group" id="search-form">
-    <input type="search"
-    class="form-control"
-    id="city-input"
-    placeholder="enter your city">
-  </div>
-  </div>
-  <div class="col">
-  <button type="submit" class="btn btn-primary">Submit</button>	
-</div>
-  </div>
-  </div>
 
-</form>
+    <form id="search-form">
+      <div class="row">
+        <div class="col-6">
+          <input type="search"
+          class="form-control"
+          id="city-input"
+          placeholder="enter your city"/>
+         </div>
+         <div class="col-3">
+          <input type="submit" value="search" class="btn btn-primary"/>	
+         </div>
+        </div>
+    </form>
+
 <h1>Weather <strong>Forecast</strong></h1>
 
 <div class="addCitySection">
@@ -170,32 +167,35 @@
 	</div>
 </div>
 
-	</div>
+	
+</div>
   <div class="col-4">
 			<div class="rightPage">
 
-<img src="" id="icon"/>
+       <img src="" id="icon"/>
         
-    <h2>today</h2>
-    <span id="date" class="mb-5"></span>
-    <div class="weather-temperature">
-			<strong id="temperature"></strong>
-			<span class="units">
-        °C | °F
-      </span>
-		</div>
-    <span class="humidityBig">Humidity</span><span id="humidity">%</span>
-    <div class="currentCityNameBig" id="city"></div>
-		</div>
+       <span id="date" class="mb-5"></span>
+
+         <div class="weather-temperature">
+			    <strong id="temperature"></strong>
+			    <span class="units">°C | <a href="#">°F</a>
+          </span>
+		     </div>
+     <div id="description"></div>
+     <div class="humidityBig">Humidity <span id="humidity">%</span></div>
+     <div class="currentCityNameBig" id="city">New York</div>
 	</div>
+  </div>
 </div>
-</div>
+
+
 <small>
 <a href="https://github.com/MariskaWanderer/mariska-weather-app"
 target="_blank"
 >Open-source code</a>
 by Mariska Mardon
 </small>
+
 </div>
 </div>
 <script src="src/app.js"></script>
