@@ -172,18 +172,22 @@
   <div class="col-4">
 			<div class="rightPage">
 
-       <img src="" id="icon"/>
-        
-       <span id="date" class="mb-5"></span>
+       <img class="icon" src="" id="icon"/>
 
          <div class="weather-temperature">
-			    <strong id="temperature"></strong>
-			    <span class="units">°C | <a href="#">°F</a>
+           <div id="date" class="mb-5"></div>
+			    <strong id="temperature" class="temperature"></strong>
+			    <span class="units">
+            <a href="#" id="celsius-link" class="active">°C</a> |
+            <a href="#" id="fahrenheit-link" class="notActive">°F</a>
           </span>
 		     </div>
-     <div id="description"></div>
-     <div class="humidityBig">Humidity <span id="humidity">%</span></div>
-     <div id="city"></div>
+     <div class="description" id="description"></div>
+
+     <div class="humidityBig">Humidity <span id="humidity"></span>%</div>
+     <div class="windSpeed">Wind <span id="wind"></span> ckm/h</div>
+
+     <div id="city" class="city"></div>
 	</div>
   </div>
 </div>
