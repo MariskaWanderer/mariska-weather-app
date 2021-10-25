@@ -44,7 +44,7 @@ function displayForecast(response) {
 
   let forecastHTML = "";
  forecast.forEach(function(forecastDay, index) {
-   if (index < 7) {
+   if (index < 6) {
      forecastHTML = forecastHTML + `
   <div class="row"> 
      <div class="col-2">
@@ -124,13 +124,13 @@ function displayCelsiusTemperature(event){
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-//let celsiusTemperature = null;
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-//let fahrenheitLink = document.querySelector("fahrenheit-link");
-//fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+let fahrenheitLink = document.querySelector("fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
-//let celsiusLink = document.querySelector("celsius-link");
-//celsiusLink.addEventListener("click", displayCelsiusTemperature);
+let celsiusLink = document.querySelector("celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
