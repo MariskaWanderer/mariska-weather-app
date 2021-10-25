@@ -24,15 +24,18 @@ function formatDate(timestamp) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  forecastElement.innerHTML = `
+  let forecastHTML = "";
+  let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ];
+ days.forEach(function(day) {
+forecastHTML = forecastHTML + `
   <div class="row"> 
      <div class="col-2">
        <img src="http://openweathermap.org/img/wn/50d@2x.png" alt=""
        width="35"
        />
      </div>
-   <div class="col-3">
-    <div class="weather-forecast-date">monday</div>
+   <div class="col-4">
+    <div class="weather-forecast-date">${day}</div>
    </div>
   <div class="col-2">
    <div class="weather-forecast-temperature-max"><span> 30</span>°</div>
@@ -43,6 +46,9 @@ function displayForecast() {
     </div>
    </div>
    `;
+ })
+  
+    forecastElement.innerHTML = forecastHTML;
 }
 
 function displayTemperature(response) {
@@ -91,16 +97,16 @@ function displayCelsiusTemperature(event){
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-let celsiusTemperature = null;
+//let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let fahrenheitLink = document.querySelector("fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+//let fahrenheitLink = document.querySelector("fahrenheit-link");
+//fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
-let celsiusLink = document.querySelector("celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
+//let celsiusLink = document.querySelector("celsius-link");
+//celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("New York");
 displayForecast();

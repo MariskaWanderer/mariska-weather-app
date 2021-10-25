@@ -80,7 +80,7 @@ li {
   font-size: 50px;
   font-weight: 600;
   color: #ffffff;
-  top: -50px;
+  top: -200px;
 }
 .weather-temprature {
   font-size: 100px;
@@ -113,7 +113,7 @@ li {
 }
 .city {
   padding: 10px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   color: #ffffff;
 }
