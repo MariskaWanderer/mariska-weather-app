@@ -117,21 +117,12 @@ li {
   font-weight: 600;
   color: #ffffff;
 }
-.monday {
+
+
+.weather-forecast-date {
   padding: 5px 0px;
 }
-.tuesday {
-  padding: 5px 0px;
-}
-.wednesday {
-  padding: 5px 0px;
-}
-.thursday {
-  padding: 5px 0px;
-}
-.friday {
-  padding: 5px 0px;
-}
+
 .weather-app {
   max-width: 1000px;
   margin: 0 auto;
@@ -151,4 +142,14 @@ li {
 }
 .weather-temperature .notActive:hover {
   text-decoration: none;
+}
+.weather-forecast-temperature-max {
+  font-weight: 600;
+}
+.weather-forecast-temperature-min {
+  font-weight: 600;
+  opacity: 0.6;
+}
+.weather-forecast-date {
+  font-weight: 500;
 }
